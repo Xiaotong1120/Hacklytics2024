@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "Hacklytics2024"
+  site-url: "https://Xiaotong1120.github.io/Hacklytics2024"
+  description: "Hacklytics2024"
+  repo-branch: main
+  repo-url: "https://github.com/Xiaotong1120/Hacklytics2024"
