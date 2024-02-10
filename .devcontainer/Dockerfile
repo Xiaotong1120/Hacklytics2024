@@ -48,7 +48,7 @@ RUN python3 -m pip install --no-cache-dir -r /tmp/requirements.txt
 RUN sudo nbdev_install_quarto
 
 # Indicate the Dockerfile owner
-LABEL maintainer="Charreau Bell"
+LABEL maintainer="Xiaotong 'Brandon' Ma"
 
 # Command to run on container start
 CMD [ "/bin/bash" ]
