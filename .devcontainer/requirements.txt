@@ -1,0 +1,7 @@
+pandas
+gradio
+openai
+nbdev
+numpy
+matplotlib
+seaborn
