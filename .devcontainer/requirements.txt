@@ -6,3 +6,5 @@ numpy
 matplotlib
 seaborn
 pylatexenc
+google-cloud-vision
+Pillow
