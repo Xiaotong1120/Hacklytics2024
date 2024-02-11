@@ -9,9 +9,12 @@ import nbdev
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
 import seaborn as sns
 import openai
 from openai import OpenAI
+from google.cloud import vision
+import io
 
 
 # %% ../nbs/output_generation.ipynb 5
@@ -80,20 +83,29 @@ def continue_prompt(latex_output,global_output):
 
 # %% ../nbs/output_generation.ipynb 8
 def m4th_assistant():
-
-    Chatgpt_key = "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"
-
+    
+    Chatgpt_key = ""
     
     latex_output = None
     global_output = None
     global_scan_text_prompt = None
 
-    # convert img data to text data
+
+    # Define the function for converting image to text using Google Cloud Vision
     def convert_img_to_text(file_input):
         nonlocal latex_output
+        client = vision.ImageAnnotatorClient()
 
-        return
-    
+        with io.open(file_input.name, 'rb') as image_file:
+            content = image_file.read()
+
+        image = vision.Image(content=content)
+
+        response = client.document_text_detection(image=image)
+        document = response.full_text_annotation
+        latex_output = document.text
+        return latex_output
+            
     # concat prompt & user's question
     # show the output on the board
     def output_generation():
@@ -110,7 +122,7 @@ def m4th_assistant():
         nonlocal latex_output, global_output, global_scan_text_prompt
 
         continue_prompt_text = continue_prompt(latex_output,global_output)
-        cotinue_output = generate_output(continue_prompt_text)
+        cotinue_output = generate_output(continue_prompt_text,Chatgpt_key)
 
         latex_output = continue_prompt_text
         continue_prompt_text = cotinue_output
