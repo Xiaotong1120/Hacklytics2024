@@ -33,6 +33,7 @@ pip install -r requirements.txt
 * Make sure Docker Desktop is launched and configured in your local environment.
 * All Jupyter notebooks within the `nbs` folder can be re-execute to test the functionality.
 * Gradio UI can be opened by simply running the `app.py` file in the VSCode terminal.
+* Be sure to fill the Chatgpt API key and the Google Cloud Vision credentials file
 
 ## Contact
 For any questions or feedback regarding ai-assisted-coding-Ember, please contact Xiaotong 'Brandon' Ma at xiaotong.ma@vanderbilt.edu.
