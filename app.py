@@ -5,7 +5,6 @@ import openai
 import pandas as pd
 import gradio as gr
 import matplotlib.pyplot as plt
-from Hacklytics2024.Handwriting_recognition import *
 from Hacklytics2024.Output_Generation import *
 
 # Define functions for each page
@@ -25,8 +24,8 @@ def home():
     - Rustam Jumazhanov
     - Sefika Ozturk
     - Xiaotong Ma
-
     """
+
     return content
 
 def main():
@@ -47,7 +46,7 @@ def main():
             convert_img_to_text, output_generation, continue_exploring, memory_initial = m4th_assistant()
             
             # convert img to text
-            file_input.change(convert_img_to_text, inputs = file_input)
+            file_input.change(convert_img_to_text, inputs=file_input)
 
             # calling Chatgpt API
             submit_button.click(output_generation, outputs = text_output) 
