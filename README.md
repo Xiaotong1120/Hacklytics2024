@@ -40,7 +40,7 @@ For any questions or feedback regarding ai-assisted-coding-Ember, please contact
 We appreciate your interest in our project and welcome your feedback!
 
 ## Developed by:
-Ethan Yee
-Rustam Jumazhanov
-Sefika Ozturk
-Xiaotong Ma
+* Ethan Yee
+* Rustam Jumazhanov
+* Sefika Ozturk
+* Xiaotong Ma
