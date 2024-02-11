@@ -5,3 +5,4 @@ nbdev
 numpy
 matplotlib
 seaborn
+pylatexenc
