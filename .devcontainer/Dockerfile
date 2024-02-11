@@ -47,6 +47,14 @@ RUN python3 -m pip install --no-cache-dir -r /tmp/requirements.txt
 # Run nbdev_install_quarto
 RUN sudo nbdev_install_quarto
 
+# Copy the Google Cloud credentials JSON file into the Docker image
+# Make sure to place your credentials JSON file in the context directory of the Docker build or adjust the source path as necessary
+COPY ./hacklytics_credentials.json /etc/google-cloud/hacklytics_credentials.json
+
+# Set the GOOGLE_APPLICATION_CREDENTIALS environment variable to the path of the credentials file inside the container
+ENV GOOGLE_APPLICATION_CREDENTIALS=/etc/google-cloud/hacklytics_credentials.json
+
+
 # Indicate the Dockerfile owner
 LABEL maintainer="Xiaotong 'Brandon' Ma"
 
