@@ -10,16 +10,16 @@ from Hacklytics2024.Output_Generation import *
 # Define functions for each page
 def home():
     content =  """
-    # Welcome to Math Learning Tool!
+    # Welcome to Math to the Point!
 
-    **Math Learning Tool** is an AI-based platform designed to assist students in their mathematical academia. This tool reads in handwriting to convert to Latex and changes in real-time and provides valuable feedback.
+    **Math to the Point** is an AI-based platform designed to assist students in their mathematical academia. This tool reads in handwriting to convert to Latex and changes in real-time and provides valuable feedback.
 
     ## Features:
-    - **Human Handwriting Interpretation**: Uses algorithms to compare against real numbers and symbols and outputs them in Latex.
+    - **Human Handwriting Interpretation**: Uses algorithms to compare against real numbers and symbols and outputs them in String.
     - **ChatGPT Implementation**: Uses AI to determine if the answer is correct or at least on the right track, if not then provides recommendations to the user on how to improve upon their weaknesses.
     - **Creative Prompt Generation**: Model continuously feeds the wrapper information on how to learn better to come up with a better solution.
 
-    ## Developed by:
+    ## Developed by 4 Math:
     - Ethan Yee
     - Rustam Jumazhanov
     - Sefika Ozturk
