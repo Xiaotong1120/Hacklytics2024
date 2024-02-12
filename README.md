@@ -36,7 +36,7 @@ pip install -r requirements.txt
 * Be sure to fill the Chatgpt API key and the Google Cloud Vision credentials file
 
 ## Contact
-For any questions or feedback regarding ai-assisted-coding-Ember, please contact Xiaotong 'Brandon' Ma at xiaotong.ma@vanderbilt.edu.
+For any questions or feedback regarding Math to the Point, please contact Xiaotong 'Brandon' Ma at xiaotong.ma@vanderbilt.edu.
 
 We appreciate your interest in our project and welcome your feedback!
 
